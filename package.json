@@ -1,0 +1,35 @@
+{
+  "name": "multi-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "dev:watch": "nodemon --watch 'src/**/*.ts' --exec ts-node src/index.ts",
+    "dep": "docker-compose -f docker-compose.yml up --build -d",
+    "dep:log": "docker-compose -f docker-compose.yml up --build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pthor11/multi-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pthor11/multi-test/issues"
+  },
+  "homepage": "https://github.com/pthor11/multi-test#readme",
+  "devDependencies": {
+    "@types/node": "^15.12.4",
+    "nodemon": "^2.0.7",
+    "ts-node": "^10.0.0",
+    "typescipt": "^1.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "kafkajs": "^1.15.0"
+  }
+}

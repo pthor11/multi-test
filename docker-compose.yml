@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  multi-test:
+    container_name: multi-test
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: multi-test
+    # ports:
+    #   - "$PORT:$PORT"
+    env_file: .env
+    restart: always
