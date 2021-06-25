@@ -56,7 +56,7 @@ const testKafka = async () => {
                                 results.push({ message, value_string })
                             }
                         })
-                        console.log('offset', Number(offset), 'remain', Number(currentOffset) - Number(offset))
+                        console.log('offset', Number(offset), 'remain', Number(currentOffset) - Number(offset), 'currentOffset', currentOffset)
                     } else {
                         console.log(`DONE`)
                         console.log({
