@@ -63,7 +63,7 @@ const testKafka = async () => {
                             filters: KAFKA_FILTER,
                             results
                         });
-                        process.exit(0)
+                        // process.exit(0)
                     }
                 } catch (e) {
                     throw e
